@@ -543,7 +543,7 @@ def monthly_statement():
         print("Please insert a valid year.")
     while True:
         month_date=input("Enter the month in number (MM): ")
-        if month_date.isdigit() and len(month_date)==2 and 1<=month_date<=12:
+        if month_date.isdigit() and len(month_date)==2 and 1<=int(month_date)<=12:
             break
         print("Please insert a valid month number.")
 
